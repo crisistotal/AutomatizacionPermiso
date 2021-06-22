@@ -150,43 +150,21 @@
   <ItemGroup>
     <Compile Include="BrowserType.cs" />
     <Compile Include="NameSpaceSetup.cs" />
-    <Compile Include="Pages\Claro\EnrolamientoPage.cs" />
-    <Compile Include="Pages\Claro\LoginPage.cs" />
-    <Compile Include="Pages\Claro\MiCuentaPage.cs" />
-    <Compile Include="Pages\Claro\TramitesPage.cs" />
-    <Compile Include="Pages\Claro\ProspectoPage.cs" />
-    <Compile Include="Pages\Multicuenta\AdministrarCuentasExternasPage.cs" />
-    <Compile Include="Pages\Multicuenta\CodigoValidacionPage.cs" />
-    <Compile Include="Pages\Multicuenta\TransferirDineroPage.cs" />
-    <Compile Include="Pages\Multicuenta\ActividadPage.cs" />
-    <Compile Include="Pages\Multicuenta\LoginPage.cs" />
+    <Compile Include="Pages\PermisoPage.cs" />
     <Compile Include="Reporter.cs" />
     <Compile Include="ScreenshotTaker.cs" />
-    <Compile Include="Pages\Multicuenta\MenuPage.cs" />
     <Compile Include="Tests\Chrome\BaseTest.cs" />
-    <Compile Include="Tests\Chrome\Claro\TestClaroProspecto.cs" />
-    <Compile Include="Tests\Chrome\MultiCuenta\TestMulticuentaActividad.cs" />
-    <Compile Include="Tests\Chrome\MultiCuenta\TestMulticuentaCuentasExternas.cs" />
-    <Compile Include="Tests\Chrome\MultiCuenta\TestMulticuentaTransferirDinero.cs" />
-    <Compile Include="Tests\Chrome\MultiCuenta\TestMulticuentaLogin.cs" />
     <Compile Include="Tests\Firefox\BaseTest.cs" />
     <Compile Include="Tests\Firefox\Claro\TestClaroEnrolamiento.cs" />
-    <Compile Include="Tests\Firefox\Claro\TestClaroProspecto.cs" />
-    <Compile Include="Tests\Firefox\MultiCuenta\TestMultiCuentaActividad.cs" />
-    <Compile Include="Tests\Firefox\MultiCuenta\TestMultiCuentaLogin.cs" />
     <Compile Include="Utils\ExcelRead.cs" />
     <Compile Include="Utils\GmailPage.cs" />
     <Compile Include="Utils\Utils.cs" />
     <Compile Include="WebDriverFactory.cs" />
-    <Compile Include="Tests\Chrome\Claro\TestClaroEnrolamiento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="chromedriver.exe" />
-    <Content Include="DataProviders\Claro\Claro.xlsx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataProviders\Multicuenta\Multicuenta.xlsx">
+    <Content Include="DataProviders\Permiso\Datos.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="NLog.config">
@@ -203,6 +181,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

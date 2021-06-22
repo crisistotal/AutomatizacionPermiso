@@ -63,6 +63,7 @@ namespace Selenium_2
             }
         }
 
+        //Se usa 
         public string ReadData(int rowNumber, string columnName)
         {
             try
